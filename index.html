@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windqix - Сервис анализа и оптимизации конверсии</title>
+    <meta name="description" content="Windqix - комплексное решение для анализа поведения пользователей и оптимизации конверсии вашего сайта. Улучшайте конверсию с помощью тепловых карт, сессионной записи и аналитики пользовательского пути.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Шапка -->
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.svg" alt="Windqix">
+                        <div class="logo-text">Wind<span class="strong">qix</span></div>
+                    </a>
+                </div>
+                <div class="nav-links">
+                    <div class="nav-item has-dropdown">
+                        <a href="pages/features/index.html" class="dropdown-title">Возможности</a>
+                        <div class="dropdown-menu">
+                            <h4>Функциональность</h4>
+                            <ul>
+                                <li><a href="pages/features/heatmaps/index.html">Тепловые карты</a></li>
+                                <li><a href="pages/features/sessions/index.html">Запись сессий</a></li>
+                                <li><a href="pages/features/funnels/index.html">Анализ воронок</a></li>
+                                <li><a href="pages/features/forms/index.html">Аналитика форм</a></li>
+                                <li><a href="pages/features/ab-testing/index.html">A/B тестирование</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nav-item has-dropdown">
+                        <a href="pages/tools/index.html" class="dropdown-title">Инструменты</a>
+                        <div class="dropdown-menu">
+                            <h4>Инструменты анализа</h4>
+                            <ul>
+                                <li><a href="pages/tools/analytics/index.html">Аналитика поведения</a></li>
+                                <li><a href="pages/tools/reporting/index.html">Отчеты и дашборды</a></li>
+                                <li><a href="pages/tools/alerts/index.html">Оповещения</a></li>
+                                <li><a href="pages/tools/api/index.html">API доступ</a></li>
+                                <li><a href="pages/tools/integrations/index.html">Интеграции</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nav-item has-dropdown">
+                        <a href="pages/consulting/index.html" class="dropdown-title">Консалтинг</a>
+                        <div class="dropdown-menu">
+                            <h4>Консалтинговые услуги</h4>
+                            <ul>
+                                <li><a href="pages/consulting/cro-audit/index.html">CRO аудит</a></li>
+                                <li><a href="pages/consulting/implementation/index.html">Внедрение</a></li>
+                                <li><a href="pages/consulting/strategy/index.html">Разработка стратегии</a></li>
+                                <li><a href="pages/consulting/training/index.html">Обучение команды</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nav-item has-dropdown">
+                        <a href="pages/academy/index.html" class="dropdown-title">Академия</a>
+                        <div class="dropdown-menu">
+                            <h4>Обучение и ресурсы</h4>
+                            <ul>
+                                <li><a href="pages/academy/courses/index.html">Курсы</a></li>
+                                <li><a href="pages/academy/webinars/index.html">Вебинары</a></li>
+                                <li><a href="pages/academy/certification/index.html">Сертификация</a></li>
+                                <li><a href="pages/academy/resources/index.html">Ресурсы</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nav-item">
+                        <a href="pages/team/index.html">Команда</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="#pricing">Тарифы</a>
+                    </div>
+                </div>
+                <div class="auth-buttons">
+                    <a href="#" class="btn btn-outline">Войти</a>
+                    <a href="#" class="btn btn-primary">Зарегистрироваться</a>
+                </div>
+                <div class="mobile-menu-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Мобильное меню -->
+    <div class="mobile-menu">
+        <div class="container">
+            <div class="nav-item">
+                <button class="dropdown-toggle">Возможности</button>
+                <div class="dropdown-menu">
+                    <ul>
+                        <li><a href="pages/features/heatmaps/index.html">Тепловые карты</a></li>
+                        <li><a href="pages/features/sessions/index.html">Запись сессий</a></li>
+                        <li><a href="pages/features/funnels/index.html">Анализ воронок</a></li>
+                        <li><a href="pages/features/forms/index.html">Аналитика форм</a></li>
+                        <li><a href="pages/features/ab-testing/index.html">A/B тестирование</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav-item">
+                <button class="dropdown-toggle">Инструменты</button>
+                <div class="dropdown-menu">
+                    <ul>
+                        <li><a href="pages/tools/analytics/index.html">Аналитика поведения</a></li>
+                        <li><a href="pages/tools/reporting/index.html">Отчеты и дашборды</a></li>
+                        <li><a href="pages/tools/alerts/index.html">Оповещения</a></li>
+                        <li><a href="pages/tools/api/index.html">API доступ</a></li>
+                        <li><a href="pages/tools/integrations/index.html">Интеграции</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav-item">
+                <button class="dropdown-toggle">Консалтинг</button>
+                <div class="dropdown-menu">
+                    <ul>
+                        <li><a href="pages/consulting/cro-audit/index.html">CRO аудит</a></li>
+                        <li><a href="pages/consulting/implementation/index.html">Внедрение</a></li>
+                        <li><a href="pages/consulting/strategy/index.html">Разработка стратегии</a></li>
+                        <li><a href="pages/consulting/training/index.html">Обучение команды</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav-item">
+                <button class="dropdown-toggle">Академия</button>
+                <div class="dropdown-menu">
+                    <ul>
+                        <li><a href="pages/academy/courses/index.html">Курсы</a></li>
+                        <li><a href="pages/academy/webinars/index.html">Вебинары</a></li>
+                        <li><a href="pages/academy/certification/index.html">Сертификация</a></li>
+                        <li><a href="pages/academy/resources/index.html">Ресурсы</a></li>
+                    </ul>
+                </div>
+            </div>
+            <a href="pages/team/index.html">Команда</a>
+            <a href="#pricing">Тарифы</a>
+            <div class="auth-buttons">
+                <a href="#" class="btn btn-outline">Войти</a>
+                <a href="#" class="btn btn-primary">Зарегистрироваться</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Главный блок -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Понимайте своих пользователей и повышайте конверсию</h1>
+                    <p class="hero-subtitle">Windqix помогает видеть и понимать поведение посетителей сайта, выявлять проблемы и увеличивать конверсию с помощью тепловых карт, записи сессий и анализа воронок.</p>
+                    <div class="hero-buttons">
+                        <a href="#" class="btn btn-primary">Попробовать бесплатно</a>
+                        <a href="#demo" class="btn btn-outline">Посмотреть демо</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="images/hero-image.svg" alt="Windqix - тепловая карта и аналитика">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Возможности (краткий обзор) -->
+    <section id="features" class="section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Возможности для роста конверсии</h2>
+                <p class="section-subtitle">Используйте комплексный набор инструментов, чтобы понять поведение пользователей и увеличить конверсию на каждом этапе воронки.</p>
+            </div>
+            <div class="features">
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h3 class="feature-title">Тепловые карты</h3>
+                    <p class="feature-description">Визуализируйте клики, движения мыши и скроллинг пользователей, чтобы понять, какие элементы привлекают внимание.</p>
+                    <a href="pages/features/heatmaps/index.html" class="btn btn-outline">Подробнее</a>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3 class="feature-title">Запись сессий</h3>
+                    <p class="feature-description">Наблюдайте за реальными сессиями пользователей, чтобы увидеть, как они взаимодействуют с вашим сайтом.</p>
+                    <a href="pages/features/sessions/index.html" class="btn btn-outline">Подробнее</a>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-funnel-dollar"></i>
+                    </div>
+                    <h3 class="feature-title">Анализ воронок</h3>
+                    <p class="feature-description">Отслеживайте путь пользователя и выявляйте места, где посетители покидают ваш сайт.</p>
+                    <a href="pages/features/funnels/index.html" class="btn btn-outline">Подробнее</a>
+                </div>
+            </div>
+            <div class="text-center" style="margin-top: 40px;">
+                <a href="pages/features/index.html" class="btn btn-primary">Посмотреть все возможности</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Как это работает -->
+    <section id="how-it-works" class="section how-it-works">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Как это работает</h2>
+                <p class="section-subtitle">Начните оптимизировать конверсию вашего сайта всего за 4 простых шага</p>
+            </div>
+            <div class="steps">
+                <div class="step-card slide-in">
+                    <div class="step-number">1</div>
+                    <h3 class="step-title">Установите скрипт</h3>
+                    <p class="step-description">Добавьте небольшой скрипт на ваш сайт. Это займет меньше минуты и не повлияет на производительность.</p>
+                </div>
+                <div class="step-card slide-in">
+                    <div class="step-number">2</div>
+                    <h3 class="step-title">Собирайте данные</h3>
+                    <p class="step-description">Система автоматически начнет собирать данные о поведении ваших пользователей.</p>
+                </div>
+                <div class="step-card slide-in">
+                    <div class="step-number">3</div>
+                    <h3 class="step-title">Анализируйте результаты</h3>
+                    <p class="step-description">Используйте мощные инструменты аналитики, чтобы выявить возможности для улучшения.</p>
+                </div>
+                <div class="step-card slide-in">
+                    <div class="step-number">4</div>
+                    <h3 class="step-title">Улучшайте конверсию</h3>
+                    <p class="step-description">Внедряйте изменения, основанные на реальных данных, и отслеживайте результаты.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Интеграции -->
+    <section class="section integrations">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Интегрируется с вашими инструментами</h2>
+                <p class="section-subtitle">Windqix легко подключается к популярным сервисам аналитики, CRM-системам и маркетинговым платформам.</p>
+            </div>
+            <div class="integration-logos">
+                <div class="integration-logo fade-in">
+                    <img src="images/integration-1.png" alt="Google Analytics">
+                </div>
+                <div class="integration-logo fade-in">
+                    <img src="images/integration-2.png" alt="Яндекс.Метрика">
+                </div>
+                <div class="integration-logo fade-in">
+                    <img src="images/integration-3.png" alt="amoCRM">
+                </div>
+                <div class="integration-logo fade-in">
+                    <img src="images/integration-4.png" alt="Bitrix24">
+                </div>
+                <div class="integration-logo fade-in">
+                    <img src="images/integration-5.png" alt="Tilda">
+                </div>
+                <div class="integration-logo fade-in">
+                    <img src="images/integration-6.png" alt="WordPress">
+                </div>
+            </div>
+            <div class="text-center" style="margin-top: 40px;">
+                <a href="pages/tools/integrations/index.html" class="btn btn-outline">Узнать больше об интеграциях</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Демо-секция -->
+    <section id="demo" class="demo-section">
+        <div class="container">
+            <div class="demo-content">
+                <div class="demo-video fade-in">
+                    <img src="images/demo-placeholder.svg" alt="Демо Windqix">
+                </div>
+                <div class="demo-text fade-in">
+                    <h2 class="demo-title">Посмотрите, как Windqix помогает повысить конверсию</h2>
+                    <p class="demo-description">В этом коротком видео мы покажем, как Windqix помогает выявлять проблемы на сайте и находить эффективные решения для увеличения конверсии.</p>
+                    <a href="#" class="btn btn-primary">Записаться на демонстрацию</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Тарифы -->
+    <section id="pricing" class="section pricing">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Выберите подходящий тариф</h2>
+                <p class="section-subtitle">Гибкие тарифы для компаний любого размера. Начните бесплатно, повышайте по мере роста.</p>
+            </div>
+            <div class="pricing-cards">
+                <div class="pricing-card fade-in">
+                    <h3 class="pricing-title">Стартап</h3>
+                    <div class="pricing-price">4 900 ₽</div>
+                    <span class="pricing-period">в месяц</span>
+                    <ul class="pricing-features">
+                        <li>До 10 000 посетителей/месяц</li>
+                        <li>3 проекта</li>
+                        <li>Тепловые карты</li>
+                        <li>Запись сессий (до 100/месяц)</li>
+                        <li>Анализ форм</li>
+                        <li>Email-поддержка</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline">Начать бесплатно</a>
+                </div>
+                <div class="pricing-card highlighted fade-in">
+                    <h3 class="pricing-title">Бизнес</h3>
+                    <div class="pricing-price">11 900 ₽</div>
+                    <span class="pricing-period">в месяц</span>
+                    <ul class="pricing-features">
+                        <li>До 50 000 посетителей/месяц</li>
+                        <li>10 проектов</li>
+                        <li>Все в тарифе "Стартап"</li>
+                        <li>Запись сессий (до 1000/месяц)</li>
+                        <li>Анализ воронок</li>
+                        <li>A/B тестирование</li>
+                        <li>Приоритетная поддержка</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">Начать бесплатно</a>
+                </div>
+                <div class="pricing-card fade-in">
+                    <h3 class="pricing-title">Энтерпрайз</h3>
+                    <div class="pricing-price">29 900 ₽</div>
+                    <span class="pricing-period">в месяц</span>
+                    <ul class="pricing-features">
+                        <li>До 500 000 посетителей/месяц</li>
+                        <li>Неограниченное число проектов</li>
+                        <li>Все в тарифе "Бизнес"</li>
+                        <li>Неограниченное количество записей</li>
+                        <li>Расширенный API-доступ</li>
+                        <li>Брендированные отчеты</li>
+                        <li>Персональный менеджер</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline">Начать бесплатно</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Наша команда (краткая версия) -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Наша команда экспертов</h2>
+                <p class="section-subtitle">Работая с Windqix, вы получаете поддержку от опытных специалистов в сфере аналитики и оптимизации конверсии</p>
+            </div>
+            <div class="text-center">
+                <p>Команда Windqix — это более 30 профессионалов с многолетним опытом в сфере UX, аналитики и CRO. Наши специалисты имеют сертификаты от ведущих мировых платформ веб-аналитики и регулярно выступают на отраслевых конференциях.</p>
+                <a href="pages/team/index.html" class="btn btn-primary" style="margin-top: 30px;">Познакомиться с командой</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section cta">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="cta-title">Начните понимать своих пользователей уже сегодня</h2>
+                <p class="cta-subtitle">Зарегистрируйтесь бесплатно и получите 14 дней полного доступа к сервису Windqix. Никаких кредитных карт, никаких обязательств.</p>
+                <a href="#" class="btn btn-light">Попробовать бесплатно</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <a href="index.html" class="footer-logo">Wind<span class="strong">qix</span></a>
+                    <p class="footer-description">Windqix — сервис для анализа поведения пользователей и оптимизации конверсии вашего сайта. Используйте тепловые карты, записи сессий и анализ воронок, чтобы понять своих пользователей и увеличить конверсию.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer-title">Возможности</h4>
+                    <ul class="footer-links">
+                        <li><a href="pages/features/heatmaps/index.html">Тепловые карты</a></li>
+                        <li><a href="pages/features/sessions/index.html">Запись сессий</a></li>
+                        <li><a href="pages/features/funnels/index.html">Анализ воронок</a></li>
+                        <li><a href="pages/features/forms/index.html">Аналитика форм</a></li>
+                        <li><a href="pages/features/ab-testing/index.html">A/B тестирование</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Компания</h4>
+                    <ul class="footer-links">
+                        <li><a href="pages/about/index.html">О нас</a></li>
+                        <li><a href="pages/team/index.html">Команда</a></li>
+                        <li><a href="#pricing">Тарифы</a></li>
+                        <li><a href="pages/consulting/index.html">Консалтинг</a></li>
+                        <li><a href="pages/academy/index.html">Академия</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Правовая информация</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Условия использования</a></li>
+                        <li><a href="#">Политика конфиденциальности</a></li>
+                        <li><a href="#">Политика cookie</a></li>
+                        <li><a href="#">Согласие на обработку данных</a></li>
+                        <li><a href="#">GDPR</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Windqix. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html> 

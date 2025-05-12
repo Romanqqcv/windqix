@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <!-- Circle background -->
+  <circle cx="20" cy="20" r="18" fill="#3481FF" />
+  <!-- Sail -->
+  <path d="M12 10 L12 30 L25 22 L25 18 Z" fill="#FFFFFF" />
+  <!-- Dog silhouette -->
+  <path d="M26 24 C28 24 30 22 30 20 C30 18 29 16 27 15 C26 14.5 25 14 24 14 C23 14 22 14.5 21 15 C20 15.5 20 16 20 17 C20 18 20.5 19 21 20 C21.5 21 22 22 23 22.5 C24 23 25 23.5 26 24 Z" fill="#FF7E5F" />
+  <!-- Dog ear -->
+  <path d="M27 15 L29 12 L28 16 Z" fill="#FF7E5F" />
+  <!-- Dog tail -->
+  <path d="M26 24 C27 24.5 28 25 29 26 C29.5 26.5 29.8 27 30 28" stroke="#FF7E5F" stroke-width="1.5" fill="none" />
+</svg> 

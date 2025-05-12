@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анализ воронок | Windqix - Сервис анализа и оптимизации конверсии</title>
+    <meta name="description" content="Анализ воронок Windqix позволяет отслеживать путь пользователя и выявлять проблемные места, где посетители покидают ваш сайт.">
+    <link rel="stylesheet" href="../../../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Шапка -->
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="../../../index.html">
+                        <img src="../../../images/logo.svg" alt="Windqix">
+                        <div class="logo-text">Wind<span class="strong">qix</span></div>
+                    </a>
+                </div>
+                <div class="nav-links">
+                    <div class="nav-item has-dropdown">
+                        <a href="../../features/index.html" class="dropdown-title">Возможности</a>
+                        <div class="dropdown-menu">
+                            <h4>Функциональность</h4>
+                            <ul>
+                                <li><a href="../../features/heatmaps/index.html">Тепловые карты</a></li>
+                                <li><a href="../../features/sessions/index.html">Запись сессий</a></li>
+                                <li><a href="../../features/funnels/index.html">Анализ воронок</a></li>
+                                <li><a href="../../features/forms/index.html">Аналитика форм</a></li>
+                                <li><a href="../../features/ab-testing/index.html">A/B тестирование</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nav-item has-dropdown">
+                        <a href="../../tools/index.html" class="dropdown-title">Инструменты</a>
+                        <div class="dropdown-menu">
+                            <h4>Инструменты анализа</h4>
+                            <ul>
+                                <li><a href="../../tools/analytics/index.html">Аналитика поведения</a></li>
+                                <li><a href="../../tools/reporting/index.html">Отчеты и дашборды</a></li>
+                                <li><a href="../../tools/alerts/index.html">Оповещения</a></li>
+                                <li><a href="../../tools/api/index.html">API доступ</a></li>
+                                <li><a href="../../tools/integrations/index.html">Интеграции</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nav-item has-dropdown">
+                        <a href="../../consulting/index.html" class="dropdown-title">Консалтинг</a>
+                        <div class="dropdown-menu">
+                            <h4>Консалтинговые услуги</h4>
+                            <ul>
+                                <li><a href="../../consulting/cro-audit/index.html">CRO аудит</a></li>
+                                <li><a href="../../consulting/implementation/index.html">Внедрение</a></li>
+                                <li><a href="../../consulting/strategy/index.html">Разработка стратегии</a></li>
+                                <li><a href="../../consulting/training/index.html">Обучение команды</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nav-item has-dropdown">
+                        <a href="../../academy/index.html" class="dropdown-title">Академия</a>
+                        <div class="dropdown-menu">
+                            <h4>Обучение и ресурсы</h4>
+                            <ul>
+                                <li><a href="../../academy/courses/index.html">Курсы</a></li>
+                                <li><a href="../../academy/webinars/index.html">Вебинары</a></li>
+                                <li><a href="../../academy/certification/index.html">Сертификация</a></li>
+                                <li><a href="../../academy/resources/index.html">Ресурсы</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nav-item">
+                        <a href="../../team/index.html">Команда</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="../../../index.html#pricing">Тарифы</a>
+                    </div>
+                </div>
+                <div class="auth-buttons">
+                    <a href="#" class="btn btn-outline">Войти</a>
+                    <a href="#" class="btn btn-primary">Зарегистрироваться</a>
+                </div>
+                <div class="mobile-menu-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Хлебные крошки -->
+    <div class="breadcrumbs">
+        <div class="container">
+            <ul>
+                <li><a href="../../../index.html">Главная</a></li>
+                <li><a href="../index.html">Возможности</a></li>
+                <li class="active">Анализ воронок</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Заголовок страницы -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content">
+                <h1 class="page-title">Анализ воронок конверсии</h1>
+                <p class="page-description">Отслеживайте путь пользователя и выявляйте проблемные места, где посетители покидают ваш сайт</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Основная информация -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Что такое анализ воронок?</h2>
+                <p class="section-subtitle">Воронка конверсии отображает путь пользователя от первого посещения до целевого действия</p>
+            </div>
+            <div class="demo-content fade-in">
+                <div class="demo-video">
+                    <img src="../../../images/funnel-analysis.svg" alt="Пример анализа воронки">
+                </div>
+                <div class="demo-text">
+                    <p>Анализ воронок позволяет визуализировать и измерить, как посетители проходят через определенную последовательность шагов на вашем сайте. Это помогает понять, где именно пользователи покидают желаемый путь и на каких этапах происходит наибольшая потеря потенциальных клиентов.</p>
+                    <p>Инструмент анализа воронок Windqix позволяет:</p>
+                    <ul>
+                        <li>Создавать воронки для любых последовательностей действий на вашем сайте</li>
+                        <li>Выявлять проблемные этапы с наибольшим оттоком пользователей</li>
+                        <li>Сегментировать воронки по различным параметрам (устройство, источник трафика, регион и др.)</li>
+                        <li>Сравнивать эффективность воронок до и после изменений на сайте</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ключевые возможности -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Ключевые возможности анализа воронок</h2>
+                <p class="section-subtitle">Мощные инструменты для глубокого понимания поведения пользователей</p>
+            </div>
+            <div class="features">
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <h3 class="feature-title">Гибкое создание воронок</h3>
+                    <p class="feature-description">Создавайте воронки с любым количеством шагов для отслеживания различных путей конверсии на вашем сайте.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3 class="feature-title">Визуализация оттока</h3>
+                    <p class="feature-description">Наглядное представление потерь пользователей на каждом этапе с возможностью детализации причин ухода.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <h3 class="feature-title">Сегментация аудитории</h3>
+                    <p class="feature-description">Анализируйте прохождение воронки различными сегментами пользователей для выявления особенностей поведения.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Применение -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Применение анализа воронок</h2>
+                <p class="section-subtitle">Как использовать воронки для оптимизации конверсии</p>
+            </div>
+            <div class="case-study-cards">
+                <div class="case-study-card fade-in">
+                    <div class="case-study-image">
+                        <img src="../../../images/funnel-ecommerce.svg" alt="Оптимизация магазина">
+                    </div>
+                    <div class="case-study-content">
+                        <h3 class="case-study-title">Оптимизация процесса покупки</h3>
+                        <p class="case-study-description">Анализируйте путь от просмотра товара до завершения заказа, выявляя и устраняя барьеры, мешающие пользователям завершить покупку.</p>
+                    </div>
+                </div>
+                <div class="case-study-card fade-in">
+                    <div class="case-study-image">
+                        <img src="../../../images/funnel-form.svg" alt="Оптимизация форм">
+                    </div>
+                    <div class="case-study-content">
+                        <h3 class="case-study-title">Улучшение процесса регистрации</h3>
+                        <p class="case-study-description">Определите, на каком шаге регистрации или заполнения формы пользователи чаще всего бросают процесс, и оптимизируйте эти этапы.</p>
+                    </div>
+                </div>
+                <div class="case-study-card fade-in">
+                    <div class="case-study-image">
+                        <img src="../../../images/funnel-content.svg" alt="Оптимизация контента">
+                    </div>
+                    <div class="case-study-content">
+                        <h3 class="case-study-title">Анализ потребления контента</h3>
+                        <p class="case-study-description">Отслеживайте, как пользователи взаимодействуют с контентом вашего сайта, какие страницы просматривают и как далеко продвигаются по воронке вовлечения.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section faq">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Часто задаваемые вопросы</h2>
+                <p class="section-subtitle">Ответы на популярные вопросы об анализе воронок</p>
+            </div>
+            <div class="faq-items">
+                <div class="faq-item fade-in">
+                    <div class="faq-question">Как создать воронку в Windqix?</div>
+                    <div class="faq-answer">
+                        <p>Создание воронки происходит в три простых шага: 1) Выберите начальную точку воронки (например, посещение определенной страницы); 2) Добавьте промежуточные шаги (клик по кнопке, заполнение поля формы, просмотр страницы); 3) Укажите конечную цель (оформление заказа, отправка формы). Вы можете создать воронку из любых действий пользователя, которые отслеживает Windqix.</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-in">
+                    <div class="faq-question">Сколько шагов может быть в воронке?</div>
+                    <div class="faq-answer">
+                        <p>В Windqix нет ограничений на количество шагов в воронке. Вы можете создавать как простые воронки из 2-3 шагов, так и сложные многоступенчатые последовательности. Однако для эффективного анализа рекомендуется выделять ключевые этапы и не перегружать воронку слишком большим количеством шагов.</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-in">
+                    <div class="faq-question">Можно ли отследить, куда уходят пользователи с определенного шага воронки?</div>
+                    <div class="faq-answer">
+                        <p>Да, Windqix предоставляет детальную информацию о том, куда именно переходят пользователи, которые не продолжили движение по воронке. Вы можете увидеть, какие страницы они посещают после выхода из воронки, или какие действия совершают вместо ожидаемых. Эта информация помогает понять причины отказа и принять меры для удержания пользователей в воронке.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section cta">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="cta-title">Начните оптимизировать ваши воронки конверсии</h2>
+                <p class="cta-subtitle">Зарегистрируйтесь бесплатно и получите 14 дней полного доступа к анализу воронок и другим инструментам Windqix</p>
+                <a href="#" class="btn btn-light">Попробовать бесплатно</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <a href="../../../index.html" class="footer-logo">Wind<span class="strong">qix</span></a>
+                    <p class="footer-description">Windqix — сервис для анализа поведения пользователей и оптимизации конверсии вашего сайта.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer-title">Возможности</h4>
+                    <ul class="footer-links">
+                        <li><a href="../../features/heatmaps/index.html">Тепловые карты</a></li>
+                        <li><a href="../../features/sessions/index.html">Запись сессий</a></li>
+                        <li><a href="../../features/funnels/index.html">Анализ воронок</a></li>
+                        <li><a href="../../features/forms/index.html">Аналитика форм</a></li>
+                        <li><a href="../../features/ab-testing/index.html">A/B тестирование</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Компания</h4>
+                    <ul class="footer-links">
+                        <li><a href="../../about/index.html">О нас</a></li>
+                        <li><a href="../../team/index.html">Команда</a></li>
+                        <li><a href="../../../index.html#pricing">Тарифы</a></li>
+                        <li><a href="../../consulting/index.html">Консалтинг</a></li>
+                        <li><a href="../../academy/index.html">Академия</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Правовая информация</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Условия использования</a></li>
+                        <li><a href="#">Политика конфиденциальности</a></li>
+                        <li><a href="#">Политика cookie</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Windqix. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../../js/script.js"></script>
+</body>
+</html> 

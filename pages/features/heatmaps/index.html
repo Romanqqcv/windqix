@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тепловые карты | ВебАнализ - Сервис анализа и оптимизации конверсии</title>
+    <meta name="description" content="Тепловые карты ВебАнализ помогают визуализировать клики, движения мыши и скроллинг пользователей, чтобы определить, какие элементы вашего сайта привлекают внимание.">
+    <link rel="stylesheet" href="../../../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Шапка -->
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="../../../index.html">
+                        <img src="../../../images/logo.svg" alt="ВебАнализ">
+                        <div class="logo-text">Веб<span class="strong">Анализ</span></div>
+                    </a>
+                </div>
+                <div class="nav-links">
+                    <div class="nav-item has-dropdown">
+                        <a href="../../features/index.html" class="dropdown-title">Возможности</a>
+                        <div class="dropdown-menu">
+                            <h4>Функциональность</h4>
+                            <ul>
+                                <li><a href="../../features/heatmaps/index.html">Тепловые карты</a></li>
+                                <li><a href="../../features/sessions/index.html">Запись сессий</a></li>
+                                <li><a href="../../features/funnels/index.html">Анализ воронок</a></li>
+                                <li><a href="../../features/forms/index.html">Аналитика форм</a></li>
+                                <li><a href="../../features/ab-testing/index.html">A/B тестирование</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nav-item has-dropdown">
+                        <a href="../../tools/index.html" class="dropdown-title">Инструменты</a>
+                        <div class="dropdown-menu">
+                            <h4>Инструменты анализа</h4>
+                            <ul>
+                                <li><a href="../../tools/analytics/index.html">Аналитика поведения</a></li>
+                                <li><a href="../../tools/reporting/index.html">Отчеты и дашборды</a></li>
+                                <li><a href="../../tools/alerts/index.html">Оповещения</a></li>
+                                <li><a href="../../tools/api/index.html">API доступ</a></li>
+                                <li><a href="../../tools/integrations/index.html">Интеграции</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nav-item has-dropdown">
+                        <a href="../../consulting/index.html" class="dropdown-title">Консалтинг</a>
+                        <div class="dropdown-menu">
+                            <h4>Консалтинговые услуги</h4>
+                            <ul>
+                                <li><a href="../../consulting/cro-audit/index.html">CRO аудит</a></li>
+                                <li><a href="../../consulting/implementation/index.html">Внедрение</a></li>
+                                <li><a href="../../consulting/strategy/index.html">Разработка стратегии</a></li>
+                                <li><a href="../../consulting/training/index.html">Обучение команды</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nav-item has-dropdown">
+                        <a href="../../academy/index.html" class="dropdown-title">Академия</a>
+                        <div class="dropdown-menu">
+                            <h4>Обучение и ресурсы</h4>
+                            <ul>
+                                <li><a href="../../academy/courses/index.html">Курсы</a></li>
+                                <li><a href="../../academy/webinars/index.html">Вебинары</a></li>
+                                <li><a href="../../academy/certification/index.html">Сертификация</a></li>
+                                <li><a href="../../academy/resources/index.html">Ресурсы</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nav-item">
+                        <a href="../../team/index.html">Команда</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="../../../index.html#pricing">Тарифы</a>
+                    </div>
+                </div>
+                <div class="auth-buttons">
+                    <a href="#" class="btn btn-outline">Войти</a>
+                    <a href="#" class="btn btn-primary">Зарегистрироваться</a>
+                </div>
+                <div class="mobile-menu-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Мобильное меню -->
+    <div class="mobile-menu">
+        <div class="container">
+            <div class="nav-item">
+                <button class="dropdown-toggle">Возможности</button>
+                <div class="dropdown-menu">
+                    <ul>
+                        <li><a href="../../features/heatmaps/index.html">Тепловые карты</a></li>
+                        <li><a href="../../features/sessions/index.html">Запись сессий</a></li>
+                        <li><a href="../../features/funnels/index.html">Анализ воронок</a></li>
+                        <li><a href="../../features/forms/index.html">Аналитика форм</a></li>
+                        <li><a href="../../features/ab-testing/index.html">A/B тестирование</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav-item">
+                <button class="dropdown-toggle">Инструменты</button>
+                <div class="dropdown-menu">
+                    <ul>
+                        <li><a href="../../tools/analytics/index.html">Аналитика поведения</a></li>
+                        <li><a href="../../tools/reporting/index.html">Отчеты и дашборды</a></li>
+                        <li><a href="../../tools/alerts/index.html">Оповещения</a></li>
+                        <li><a href="../../tools/api/index.html">API доступ</a></li>
+                        <li><a href="../../tools/integrations/index.html">Интеграции</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav-item">
+                <button class="dropdown-toggle">Консалтинг</button>
+                <div class="dropdown-menu">
+                    <ul>
+                        <li><a href="../../consulting/cro-audit/index.html">CRO аудит</a></li>
+                        <li><a href="../../consulting/implementation/index.html">Внедрение</a></li>
+                        <li><a href="../../consulting/strategy/index.html">Разработка стратегии</a></li>
+                        <li><a href="../../consulting/training/index.html">Обучение команды</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav-item">
+                <button class="dropdown-toggle">Академия</button>
+                <div class="dropdown-menu">
+                    <ul>
+                        <li><a href="../../academy/courses/index.html">Курсы</a></li>
+                        <li><a href="../../academy/webinars/index.html">Вебинары</a></li>
+                        <li><a href="../../academy/certification/index.html">Сертификация</a></li>
+                        <li><a href="../../academy/resources/index.html">Ресурсы</a></li>
+                    </ul>
+                </div>
+            </div>
+            <a href="../../team/index.html">Команда</a>
+            <a href="../../../index.html#pricing">Тарифы</a>
+            <div class="auth-buttons">
+                <a href="#" class="btn btn-outline">Войти</a>
+                <a href="#" class="btn btn-primary">Зарегистрироваться</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Хлебные крошки -->
+    <div class="breadcrumbs">
+        <div class="container">
+            <ul>
+                <li><a href="../../../index.html">Главная</a></li>
+                <li><a href="../index.html">Возможности</a></li>
+                <li class="active">Тепловые карты</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Заголовок страницы -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content">
+                <h1 class="page-title">Тепловые карты</h1>
+                <p class="page-description">Визуализируйте поведение пользователей и повышайте конверсию, определяя области повышенного внимания на вашем сайте</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Основная информация -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Что такое тепловые карты?</h2>
+                <p class="section-subtitle">Тепловые карты — это визуальное представление данных о том, как пользователи взаимодействуют с вашим сайтом</p>
+            </div>
+            <div class="demo-content fade-in">
+                <div class="demo-video">
+                    <img src="../../../images/heatmap-example.svg" alt="Пример тепловой карты">
+                </div>
+                <div class="demo-text">
+                    <p>Тепловые карты ВебАнализ преобразуют сложные данные о поведении пользователей в интуитивно понятные визуальные отчеты, где "горячие" зоны (обычно красного цвета) показывают области с высокой активностью, а "холодные" зоны (обычно синего цвета) — с низкой.</p>
+                    <p>Используя тепловые карты, вы можете быстро определить:</p>
+                    <ul>
+                        <li>Какие элементы привлекают наибольшее внимание</li>
+                        <li>Где пользователи кликают чаще всего</li>
+                        <li>Насколько глубоко прокручивают страницу</li>
+                        <li>Какие части интерфейса игнорируются</li>
+                    </ul>
+                    <p>Эта информация помогает принимать обоснованные решения по оптимизации дизайна и содержания вашего сайта.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Типы тепловых карт -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Типы тепловых карт</h2>
+                <p class="section-subtitle">ВебАнализ предлагает различные типы тепловых карт для всестороннего анализа поведения пользователей</p>
+            </div>
+            <div class="features">
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-mouse-pointer"></i>
+                    </div>
+                    <h3 class="feature-title">Карты кликов</h3>
+                    <p class="feature-description">Показывают, где пользователи кликают на странице. Позволяют определить эффективность призывов к действию и значимость элементов интерфейса.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-mouse"></i>
+                    </div>
+                    <h3 class="feature-title">Карты движения</h3>
+                    <p class="feature-description">Отслеживают движение курсора мыши. Помогают понять, какие элементы привлекают внимание, даже если пользователи не кликают по ним.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-arrow-down"></i>
+                    </div>
+                    <h3 class="feature-title">Карты скроллинга</h3>
+                    <p class="feature-description">Показывают, как далеко пользователи прокручивают страницу. Помогают определить "линию сгиба" и оптимальное расположение важного контента.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Применение -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Применение тепловых карт</h2>
+                <p class="section-subtitle">Как использовать тепловые карты для повышения конверсии</p>
+            </div>
+            <div class="case-study-cards">
+                <div class="case-study-card fade-in">
+                    <div class="case-study-image">
+                        <img src="../../../images/heatmap-landing.svg" alt="Оптимизация лендинга">
+                    </div>
+                    <div class="case-study-content">
+                        <h3 class="case-study-title">Оптимизация главной страницы</h3>
+                        <p class="case-study-description">Определите, какие элементы главной страницы привлекают больше всего внимания, и оптимизируйте расположение ключевых сообщений и призывов к действию.</p>
+                    </div>
+                </div>
+                <div class="case-study-card fade-in">
+                    <div class="case-study-image">
+                        <img src="../../../images/heatmap-form.svg" alt="Улучшение форм">
+                    </div>
+                    <div class="case-study-content">
+                        <h3 class="case-study-title">Улучшение форм</h3>
+                        <p class="case-study-description">Выявите проблемные поля формы, где пользователи часто кликают или задерживаются, и упростите процесс заполнения для повышения конверсии.</p>
+                    </div>
+                </div>
+                <div class="case-study-card fade-in">
+                    <div class="case-study-image">
+                        <img src="../../../images/heatmap-navigation.svg" alt="Улучшение навигации">
+                    </div>
+                    <div class="case-study-content">
+                        <h3 class="case-study-title">Улучшение навигации</h3>
+                        <p class="case-study-description">Проанализируйте, какие элементы меню и навигации используются чаще всего, и оптимизируйте структуру сайта для более интуитивного пользовательского опыта.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Преимущества -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Преимущества тепловых карт ВебАнализ</h2>
+                <p class="section-subtitle">Почему тысячи компаний выбирают наши решения</p>
+            </div>
+            <div class="features">
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3 class="feature-title">Мгновенные инсайты</h3>
+                    <p class="feature-description">Получайте визуальное представление данных в режиме реального времени и быстро принимайте решения на основе актуальной информации.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-filter"></i>
+                    </div>
+                    <h3 class="feature-title">Расширенная фильтрация</h3>
+                    <p class="feature-description">Сегментируйте данные по типу устройства, источнику трафика, новым или повторным посетителям и другим параметрам.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 class="feature-title">Адаптивность</h3>
+                    <p class="feature-description">Анализируйте поведение пользователей на разных устройствах и разрешениях экрана для оптимизации адаптивного дизайна.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3 class="feature-title">Историческое сравнение</h3>
+                    <p class="feature-description">Сравнивайте тепловые карты до и после внесения изменений, чтобы оценить эффективность оптимизации.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3 class="feature-title">Детальная аналитика</h3>
+                    <p class="feature-description">Получайте не только визуальное представление, но и подробные количественные данные по каждому элементу.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-share-alt"></i>
+                    </div>
+                    <h3 class="feature-title">Простой экспорт</h3>
+                    <p class="feature-description">Легко делитесь отчетами с командой или клиентами через ссылки или экспорт в различные форматы.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section faq">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Часто задаваемые вопросы</h2>
+                <p class="section-subtitle">Ответы на популярные вопросы о тепловых картах ВебАнализ</p>
+            </div>
+            <div class="faq-items">
+                <div class="faq-item fade-in">
+                    <div class="faq-question">Влияет ли скрипт тепловых карт на скорость загрузки страницы?</div>
+                    <div class="faq-answer">
+                        <p>Нет, скрипт ВебАнализ оптимизирован для минимального влияния на производительность. Он асинхронный, легкий (менее 10 КБ) и загружается только после полной загрузки страницы. Наши тесты показывают, что влияние на время загрузки составляет менее 100 мс.</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-in">
+                    <div class="faq-question">Какой минимальный трафик нужен для получения достоверных данных?</div>
+                    <div class="faq-answer">
+                        <p>Для создания надежной тепловой карты рекомендуется собрать данные о минимум 1000-2000 просмотрах страницы. Однако, даже с меньшим количеством данных можно получить полезные инсайты. Наш алгоритм автоматически сообщит, если размер выборки недостаточен для статистической достоверности.</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-in">
+                    <div class="faq-question">Можно ли создавать тепловые карты для динамического контента?</div>
+                    <div class="faq-answer">
+                        <p>Да, ВебАнализ поддерживает создание тепловых карт для динамических страниц, включая одностраничные приложения (SPA) и сайты с AJAX-загрузкой контента. Наш скрипт отслеживает взаимодействия пользователя с контентом независимо от технологии его загрузки.</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-in">
+                    <div class="faq-question">Соответствуют ли тепловые карты ВебАнализ требованиям GDPR?</div>
+                    <div class="faq-answer">
+                        <p>Да, наше решение полностью соответствует требованиям GDPR и других норм защиты данных. Мы не собираем персональную информацию без согласия пользователей, предоставляем возможность отказа от отслеживания и обеспечиваем безопасное хранение данных. Подробнее о мерах по защите конфиденциальности можно узнать в нашей политике конфиденциальности.</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-in">
+                    <div class="faq-question">Как интегрировать тепловые карты с Google Analytics или Яндекс.Метрикой?</div>
+                    <div class="faq-answer">
+                        <p>ВебАнализ предлагает готовые интеграции с популярными аналитическими платформами. Вы можете связать данные тепловых карт с сегментами и целями в Google Analytics или Яндекс.Метрике всего в несколько кликов через панель интеграций в личном кабинете. Это позволяет сопоставлять поведенческие данные с метриками конверсии.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section cta">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="cta-title">Начните использовать тепловые карты уже сегодня</h2>
+                <p class="cta-subtitle">Зарегистрируйтесь бесплатно и получите 14 дней полного доступа к тепловым картам и другим инструментам ВебАнализ</p>
+                <a href="#" class="btn btn-light">Попробовать бесплатно</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <a href="../../../index.html" class="footer-logo">Веб<span class="strong">Анализ</span></a>
+                    <p class="footer-description">ВебАнализ — сервис для анализа поведения пользователей и оптимизации конверсии вашего сайта. Используйте тепловые карты, записи сессий и анализ воронок, чтобы понять своих пользователей и увеличить конверсию.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer-title">Возможности</h4>
+                    <ul class="footer-links">
+                        <li><a href="../../features/heatmaps/index.html">Тепловые карты</a></li>
+                        <li><a href="../../features/sessions/index.html">Запись сессий</a></li>
+                        <li><a href="../../features/funnels/index.html">Анализ воронок</a></li>
+                        <li><a href="../../features/forms/index.html">Аналитика форм</a></li>
+                        <li><a href="../../features/ab-testing/index.html">A/B тестирование</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Компания</h4>
+                    <ul class="footer-links">
+                        <li><a href="../../about/index.html">О нас</a></li>
+                        <li><a href="../../team/index.html">Команда</a></li>
+                        <li><a href="../../../index.html#pricing">Тарифы</a></li>
+                        <li><a href="../../consulting/index.html">Консалтинг</a></li>
+                        <li><a href="../../academy/index.html">Академия</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Правовая информация</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Условия использования</a></li>
+                        <li><a href="#">Политика конфиденциальности</a></li>
+                        <li><a href="#">Политика cookie</a></li>
+                        <li><a href="#">Согласие на обработку данных</a></li>
+                        <li><a href="#">GDPR</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ВебАнализ. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../../js/script.js"></script>
+</body>
+</html> 
