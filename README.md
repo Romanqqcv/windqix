@@ -65,5 +65,4 @@ webalyz/
 ## Контакты
 
 По всем вопросам обращайтесь:
-- Email: info@windqix.ru
-- Телефон: +7 (800) 123-45-67 
+- Email: info@windqix.ru 
