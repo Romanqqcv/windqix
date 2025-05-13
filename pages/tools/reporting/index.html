@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отчеты и дашборды | Windqix - Сервис анализа и оптимизации конверсии</title>
+    <meta name="description" content="Настраиваемые отчеты и дашборды Windqix для мониторинга ключевых метрик и визуализации данных о поведении пользователей вашего сайта.">
+    <link rel="stylesheet" href="../../../../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Шапка -->
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="../../../../index.html">
+                        <img src="../../../../images/logo.svg" alt="Windqix">
+                        <div class="logo-text">Wind<span class="strong">qix</span></div>
+                    </a>
+                </div>
+                <div class="nav-links">
+                    <div class="nav-item has-dropdown">
+                        <a href="../../../features/index.html" class="dropdown-title">Возможности</a>
+                        <div class="dropdown-menu">
+                            <h4>Функциональность</h4>
+                            <ul>
+                                <li><a href="../../../features/heatmaps/index.html">Тепловые карты</a></li>
+                                <li><a href="../../../features/sessions/index.html">Запись сессий</a></li>
+                                <li><a href="../../../features/funnels/index.html">Анализ воронок</a></li>
+                                <li><a href="../../../features/forms/index.html">Аналитика форм</a></li>
+                                <li><a href="../../../features/ab-testing/index.html">A/B тестирование</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nav-item has-dropdown">
+                        <a href="../../tools/index.html" class="dropdown-title">Инструменты</a>
+                        <div class="dropdown-menu">
+                            <h4>Инструменты анализа</h4>
+                            <ul>
+                                <li><a href="../../tools/analytics/index.html">Аналитика поведения</a></li>
+                                <li><a href="../../tools/reporting/index.html">Отчеты и дашборды</a></li>
+                                <li><a href="../../tools/alerts/index.html">Оповещения</a></li>
+                                <li><a href="../../tools/api/index.html">API доступ</a></li>
+                                <li><a href="../../tools/integrations/index.html">Интеграции</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nav-item has-dropdown">
+                        <a href="../../../consulting/index.html" class="dropdown-title">Консалтинг</a>
+                        <div class="dropdown-menu">
+                            <h4>Консалтинговые услуги</h4>
+                            <ul>
+                                <li><a href="../../../consulting/cro-audit/index.html">CRO аудит</a></li>
+                                <li><a href="../../../consulting/implementation/index.html">Внедрение</a></li>
+                                <li><a href="../../../consulting/strategy/index.html">Разработка стратегии</a></li>
+                                <li><a href="../../../consulting/training/index.html">Обучение команды</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nav-item has-dropdown">
+                        <a href="../../../academy/index.html" class="dropdown-title">Академия</a>
+                        <div class="dropdown-menu">
+                            <h4>Обучение и ресурсы</h4>
+                            <ul>
+                                <li><a href="../../../academy/courses/index.html">Курсы</a></li>
+                                <li><a href="../../../academy/webinars/index.html">Вебинары</a></li>
+                                <li><a href="../../../academy/certification/index.html">Сертификация</a></li>
+                                <li><a href="../../../academy/resources/index.html">Ресурсы</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nav-item">
+                        <a href="../../../team/index.html">Команда</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="../../../../index.html#pricing">Тарифы</a>
+                    </div>
+                </div>
+                <div class="auth-buttons">
+                    <a href="#" class="btn btn-outline">Войти</a>
+                    <a href="#" class="btn btn-primary">Зарегистрироваться</a>
+                </div>
+                <div class="mobile-menu-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Мобильное меню -->
+    <div class="mobile-menu">
+        <div class="container">
+            <div class="nav-item">
+                <button class="dropdown-toggle">Возможности</button>
+                <div class="dropdown-menu">
+                    <ul>
+                        <li><a href="../../../features/heatmaps/index.html">Тепловые карты</a></li>
+                        <li><a href="../../../features/sessions/index.html">Запись сессий</a></li>
+                        <li><a href="../../../features/funnels/index.html">Анализ воронок</a></li>
+                        <li><a href="../../../features/forms/index.html">Аналитика форм</a></li>
+                        <li><a href="../../../features/ab-testing/index.html">A/B тестирование</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav-item">
+                <button class="dropdown-toggle">Инструменты</button>
+                <div class="dropdown-menu">
+                    <ul>
+                        <li><a href="../../tools/analytics/index.html">Аналитика поведения</a></li>
+                        <li><a href="../../tools/reporting/index.html">Отчеты и дашборды</a></li>
+                        <li><a href="../../tools/alerts/index.html">Оповещения</a></li>
+                        <li><a href="../../tools/api/index.html">API доступ</a></li>
+                        <li><a href="../../tools/integrations/index.html">Интеграции</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav-item">
+                <button class="dropdown-toggle">Консалтинг</button>
+                <div class="dropdown-menu">
+                    <ul>
+                        <li><a href="../../../consulting/cro-audit/index.html">CRO аудит</a></li>
+                        <li><a href="../../../consulting/implementation/index.html">Внедрение</a></li>
+                        <li><a href="../../../consulting/strategy/index.html">Разработка стратегии</a></li>
+                        <li><a href="../../../consulting/training/index.html">Обучение команды</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav-item">
+                <button class="dropdown-toggle">Академия</button>
+                <div class="dropdown-menu">
+                    <ul>
+                        <li><a href="../../../academy/courses/index.html">Курсы</a></li>
+                        <li><a href="../../../academy/webinars/index.html">Вебинары</a></li>
+                        <li><a href="../../../academy/certification/index.html">Сертификация</a></li>
+                        <li><a href="../../../academy/resources/index.html">Ресурсы</a></li>
+                    </ul>
+                </div>
+            </div>
+            <a href="../../../team/index.html">Команда</a>
+            <a href="../../../../index.html#pricing">Тарифы</a>
+            <div class="auth-buttons">
+                <a href="#" class="btn btn-outline">Войти</a>
+                <a href="#" class="btn btn-primary">Зарегистрироваться</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Хлебные крошки -->
+    <div class="breadcrumbs">
+        <div class="container">
+            <ul>
+                <li><a href="../../../../index.html">Главная</a></li>
+                <li><a href="../../index.html">Инструменты</a></li>
+                <li class="active">Отчеты и дашборды</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Заголовок страницы -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content">
+                <h1 class="page-title">Отчеты и дашборды</h1>
+                <p class="page-description">Визуализируйте данные о поведении пользователей и отслеживайте ключевые метрики в реальном времени</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Основная информация -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Информативные отчеты и интерактивные дашборды</h2>
+                <p class="section-subtitle">Наглядная визуализация данных для быстрого принятия решений</p>
+            </div>
+            <div class="demo-content fade-in">
+                <div class="demo-video">
+                    <img src="../../../../images/dashboard-example.svg" alt="Пример дашборда Windqix">
+                </div>
+                <div class="demo-text">
+                    <p>Отчеты и дашборды Windqix — это мощный инструмент для визуализации и анализа данных о поведении пользователей на вашем сайте. Создавайте наглядные отчеты с ключевыми метриками и настраивайте интерактивные дашборды для мониторинга всех важных показателей в одном месте.</p>
+                    <p>С помощью отчетов и дашбордов вы сможете:</p>
+                    <ul>
+                        <li>Отслеживать изменение показателей в динамике</li>
+                        <li>Сравнивать результаты до и после внесения изменений</li>
+                        <li>Выявлять тренды и аномалии в поведении пользователей</li>
+                        <li>Настраивать автоматическую отправку отчетов команде</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Типы отчетов -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Типы отчетов и дашбордов</h2>
+                <p class="section-subtitle">Различные типы визуализации для полного контроля над данными</p>
+            </div>
+            <div class="features">
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="feature-title">Отчеты по конверсии</h3>
+                    <p class="feature-description">Детальные отчеты о конверсии на различных этапах воронки с возможностью сегментации по источникам трафика, устройствам и другим параметрам.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="feature-title">Отчеты по аудитории</h3>
+                    <p class="feature-description">Визуализация демографических данных, географического распределения и технических характеристик устройств ваших пользователей.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <h3 class="feature-title">Дашборды производительности</h3>
+                    <p class="feature-description">Интерактивные дашборды для мониторинга ключевых показателей эффективности (KPI) с возможностью настройки порогов и целевых значений.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3 class="feature-title">Отчеты по времени</h3>
+                    <p class="feature-description">Анализ временных метрик: времени на сайте, времени до конверсии, скорости взаимодействия с элементами и других временных показателей.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <h3 class="feature-title">Сравнительные отчеты</h3>
+                    <p class="feature-description">Сравнение показателей за разные периоды или между различными сегментами пользователей для выявления тенденций и изменений.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-paper-plane"></i>
+                    </div>
+                    <h3 class="feature-title">Автоматические отчеты</h3>
+                    <p class="feature-description">Настройка регулярной отправки отчетов по электронной почте с возможностью выбора периодичности и получателей.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Преимущества -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Преимущества отчетов и дашбордов Windqix</h2>
+                <p class="section-subtitle">Почему наши инструменты отчетности востребованы среди профессионалов</p>
+            </div>
+            <div class="two-columns">
+                <div class="column fade-in">
+                    <img src="../../../../images/reporting-benefits.svg" alt="Преимущества отчетов Windqix">
+                </div>
+                <div class="column fade-in">
+                    <ul class="benefits-list">
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span><strong>Гибкая настройка</strong> — создавайте отчеты и дашборды под свои уникальные потребности</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span><strong>Интерактивность</strong> — фильтруйте и сегментируйте данные прямо в интерфейсе отчета</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span><strong>Экспорт данных</strong> — сохраняйте отчеты в форматах PDF, CSV, Excel для дальнейшего анализа</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span><strong>Общий доступ</strong> — делитесь отчетами с коллегами через публичные ссылки с настройкой прав доступа</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span><strong>Автоматическое обновление</strong> — отчеты всегда содержат актуальную информацию</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span><strong>Интеграция</strong> — комбинируйте данные из разных источников в единых отчетах</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section cta">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="cta-title">Начните использовать информативные отчеты уже сегодня</h2>
+                <p class="cta-subtitle">Зарегистрируйтесь бесплатно и получите 14 дней полного доступа к отчетам, дашбордам и другим инструментам Windqix</p>
+                <a href="#" class="btn btn-light">Попробовать бесплатно</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <a href="../../../../index.html" class="footer-logo">Wind<span class="strong">qix</span></a>
+                    <p class="footer-description">Windqix — сервис для анализа поведения пользователей и оптимизации конверсии вашего сайта. Используйте тепловые карты, записи сессий и анализ воронок, чтобы понять своих пользователей и увеличить конверсию.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer-title">Возможности</h4>
+                    <ul class="footer-links">
+                        <li><a href="../../../features/heatmaps/index.html">Тепловые карты</a></li>
+                        <li><a href="../../../features/sessions/index.html">Запись сессий</a></li>
+                        <li><a href="../../../features/funnels/index.html">Анализ воронок</a></li>
+                        <li><a href="../../../features/forms/index.html">Аналитика форм</a></li>
+                        <li><a href="../../../features/ab-testing/index.html">A/B тестирование</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Инструменты</h4>
+                    <ul class="footer-links">
+                        <li><a href="../analytics/index.html">Аналитика поведения</a></li>
+                        <li><a href="../reporting/index.html">Отчеты и дашборды</a></li>
+                        <li><a href="../alerts/index.html">Оповещения</a></li>
+                        <li><a href="../api/index.html">API доступ</a></li>
+                        <li><a href="../integrations/index.html">Интеграции</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Компания</h4>
+                    <ul class="footer-links">
+                        <li><a href="../../../about/index.html">О нас</a></li>
+                        <li><a href="../../../team/index.html">Команда</a></li>
+                        <li><a href="#">Блог</a></li>
+                        <li><a href="#">Карьера</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright">© 2023 Windqix. Все права защищены.</div>
+                <div class="footer-bottom-links">
+                    <a href="#">Политика конфиденциальности</a>
+                    <a href="#">Условия использования</a>
+                    <a href="#">Правовая информация</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../../../js/script.js"></script>
+</body>
+</html> 

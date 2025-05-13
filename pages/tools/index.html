@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Инструменты | Windqix - Сервис анализа и оптимизации конверсии</title>
+    <meta name="description" content="Инструменты Windqix для анализа поведения пользователей и оптимизации конверсии. Аналитика поведения, отчеты, оповещения, API и интеграции для улучшения вашего сайта.">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Шапка -->
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="../../index.html">
+                        <img src="../../images/logo.svg" alt="Windqix">
+                        <div class="logo-text">Wind<span class="strong">qix</span></div>
+                    </a>
+                </div>
+                <div class="nav-links">
+                    <div class="nav-item has-dropdown">
+                        <a href="../features/index.html" class="dropdown-title">Возможности</a>
+                        <div class="dropdown-menu">
+                            <h4>Функциональность</h4>
+                            <ul>
+                                <li><a href="../features/heatmaps/index.html">Тепловые карты</a></li>
+                                <li><a href="../features/sessions/index.html">Запись сессий</a></li>
+                                <li><a href="../features/funnels/index.html">Анализ воронок</a></li>
+                                <li><a href="../features/forms/index.html">Аналитика форм</a></li>
+                                <li><a href="../features/ab-testing/index.html">A/B тестирование</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nav-item has-dropdown">
+                        <a href="../tools/index.html" class="dropdown-title">Инструменты</a>
+                        <div class="dropdown-menu">
+                            <h4>Инструменты анализа</h4>
+                            <ul>
+                                <li><a href="../tools/analytics/index.html">Аналитика поведения</a></li>
+                                <li><a href="../tools/reporting/index.html">Отчеты и дашборды</a></li>
+                                <li><a href="../tools/alerts/index.html">Оповещения</a></li>
+                                <li><a href="../tools/api/index.html">API доступ</a></li>
+                                <li><a href="../tools/integrations/index.html">Интеграции</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nav-item has-dropdown">
+                        <a href="../consulting/index.html" class="dropdown-title">Консалтинг</a>
+                        <div class="dropdown-menu">
+                            <h4>Консалтинговые услуги</h4>
+                            <ul>
+                                <li><a href="../consulting/cro-audit/index.html">CRO аудит</a></li>
+                                <li><a href="../consulting/implementation/index.html">Внедрение</a></li>
+                                <li><a href="../consulting/strategy/index.html">Разработка стратегии</a></li>
+                                <li><a href="../consulting/training/index.html">Обучение команды</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nav-item has-dropdown">
+                        <a href="../academy/index.html" class="dropdown-title">Академия</a>
+                        <div class="dropdown-menu">
+                            <h4>Обучение и ресурсы</h4>
+                            <ul>
+                                <li><a href="../academy/courses/index.html">Курсы</a></li>
+                                <li><a href="../academy/webinars/index.html">Вебинары</a></li>
+                                <li><a href="../academy/certification/index.html">Сертификация</a></li>
+                                <li><a href="../academy/resources/index.html">Ресурсы</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nav-item">
+                        <a href="../team/index.html">Команда</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="../../index.html#pricing">Тарифы</a>
+                    </div>
+                </div>
+                <div class="auth-buttons">
+                    <a href="#" class="btn btn-outline">Войти</a>
+                    <a href="#" class="btn btn-primary">Зарегистрироваться</a>
+                </div>
+                <div class="mobile-menu-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Мобильное меню -->
+    <div class="mobile-menu">
+        <div class="container">
+            <div class="nav-item">
+                <button class="dropdown-toggle">Возможности</button>
+                <div class="dropdown-menu">
+                    <ul>
+                        <li><a href="../features/heatmaps/index.html">Тепловые карты</a></li>
+                        <li><a href="../features/sessions/index.html">Запись сессий</a></li>
+                        <li><a href="../features/funnels/index.html">Анализ воронок</a></li>
+                        <li><a href="../features/forms/index.html">Аналитика форм</a></li>
+                        <li><a href="../features/ab-testing/index.html">A/B тестирование</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav-item">
+                <button class="dropdown-toggle">Инструменты</button>
+                <div class="dropdown-menu">
+                    <ul>
+                        <li><a href="../tools/analytics/index.html">Аналитика поведения</a></li>
+                        <li><a href="../tools/reporting/index.html">Отчеты и дашборды</a></li>
+                        <li><a href="../tools/alerts/index.html">Оповещения</a></li>
+                        <li><a href="../tools/api/index.html">API доступ</a></li>
+                        <li><a href="../tools/integrations/index.html">Интеграции</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav-item">
+                <button class="dropdown-toggle">Консалтинг</button>
+                <div class="dropdown-menu">
+                    <ul>
+                        <li><a href="../consulting/cro-audit/index.html">CRO аудит</a></li>
+                        <li><a href="../consulting/implementation/index.html">Внедрение</a></li>
+                        <li><a href="../consulting/strategy/index.html">Разработка стратегии</a></li>
+                        <li><a href="../consulting/training/index.html">Обучение команды</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav-item">
+                <button class="dropdown-toggle">Академия</button>
+                <div class="dropdown-menu">
+                    <ul>
+                        <li><a href="../academy/courses/index.html">Курсы</a></li>
+                        <li><a href="../academy/webinars/index.html">Вебинары</a></li>
+                        <li><a href="../academy/certification/index.html">Сертификация</a></li>
+                        <li><a href="../academy/resources/index.html">Ресурсы</a></li>
+                    </ul>
+                </div>
+            </div>
+            <a href="../team/index.html">Команда</a>
+            <a href="../../index.html#pricing">Тарифы</a>
+            <div class="auth-buttons">
+                <a href="#" class="btn btn-outline">Войти</a>
+                <a href="#" class="btn btn-primary">Зарегистрироваться</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Хлебные крошки -->
+    <div class="breadcrumbs">
+        <div class="container">
+            <ul>
+                <li><a href="../../index.html">Главная</a></li>
+                <li class="active">Инструменты</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Заголовок страницы -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content">
+                <h1 class="page-title">Инструменты анализа и оптимизации</h1>
+                <p class="page-description">Полный набор инструментов для глубокого анализа поведения пользователей и принятия обоснованных решений по оптимизации конверсии</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Основные инструменты -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Ключевые инструменты Windqix</h2>
+                <p class="section-subtitle">Комплексные решения для анализа поведения пользователей и оптимизации вашего сайта</p>
+            </div>
+            <div class="features">
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="feature-title">Аналитика поведения</h3>
+                    <p class="feature-description">Глубокий анализ поведения пользователей с детальной сегментацией по различным параметрам для понимания паттернов использования сайта.</p>
+                    <a href="analytics/index.html" class="btn btn-outline">Подробнее</a>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-table"></i>
+                    </div>
+                    <h3 class="feature-title">Отчеты и дашборды</h3>
+                    <p class="feature-description">Настраиваемые интерактивные дашборды и автоматические отчеты для мониторинга ключевых метрик и тенденций.</p>
+                    <a href="reporting/index.html" class="btn btn-outline">Подробнее</a>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-bell"></i>
+                    </div>
+                    <h3 class="feature-title">Оповещения</h3>
+                    <p class="feature-description">Настраиваемые уведомления о важных изменениях в поведении пользователей, проблемах и достижении ключевых показателей.</p>
+                    <a href="alerts/index.html" class="btn btn-outline">Подробнее</a>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="feature-title">API доступ</h3>
+                    <p class="feature-description">Гибкий API для интеграции данных Windqix с вашими собственными системами и создания кастомных решений.</p>
+                    <a href="api/index.html" class="btn btn-outline">Подробнее</a>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-puzzle-piece"></i>
+                    </div>
+                    <h3 class="feature-title">Интеграции</h3>
+                    <p class="feature-description">Готовые интеграции с популярными аналитическими сервисами, CRM-системами и маркетинговыми платформами.</p>
+                    <a href="integrations/index.html" class="btn btn-outline">Подробнее</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Преимущества инструментов -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Преимущества инструментов Windqix</h2>
+                <p class="section-subtitle">Почему наши инструменты выбирают тысячи компаний для оптимизации пользовательского опыта</p>
+            </div>
+            <div class="two-columns">
+                <div class="column fade-in">
+                    <img src="../../images/tools-dashboard.svg" alt="Интерфейс инструментов Windqix">
+                </div>
+                <div class="column fade-in">
+                    <ul class="benefits-list">
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span><strong>Интуитивный интерфейс</strong> — простой и понятный даже для начинающих аналитиков</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span><strong>Гибкая настройка</strong> — адаптация под ваши бизнес-задачи и специфику проекта</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span><strong>Реальные данные в реальном времени</strong> — актуальная информация для принятия решений</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span><strong>Масштабируемость</strong> — от небольших сайтов до крупных порталов с миллионами посетителей</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span><strong>Безопасность данных</strong> — соответствие требованиям GDPR и других стандартов</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span><strong>Командная работа</strong> — удобный доступ для разных ролей с разными уровнями прав</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Кейсы использования -->
+    <section class="section case-studies">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Кейсы использования</h2>
+                <p class="section-subtitle">Как наши клиенты используют инструменты Windqix для достижения результатов</p>
+            </div>
+            <div class="case-study-cards">
+                <div class="case-study-card fade-in">
+                    <div class="case-study-image">
+                        <img src="../../images/case-ecommerce.svg" alt="Кейс E-commerce">
+                    </div>
+                    <div class="case-study-content">
+                        <h3 class="case-study-title">E-commerce</h3>
+                        <p class="case-study-description">Интернет-магазин спортивных товаров увеличил конверсию чекаута на 27% благодаря анализу пользовательского пути и выявлению проблемных точек с помощью инструментов Windqix.</p>
+                    </div>
+                </div>
+                <div class="case-study-card fade-in">
+                    <div class="case-study-image">
+                        <img src="../../images/case-saas.svg" alt="Кейс SaaS">
+                    </div>
+                    <div class="case-study-content">
+                        <h3 class="case-study-title">SaaS</h3>
+                        <p class="case-study-description">B2B-сервис автоматизации повысил удержание пользователей на 35% после оптимизации пользовательского опыта на основе данных о реальном использовании продукта.</p>
+                    </div>
+                </div>
+                <div class="case-study-card fade-in">
+                    <div class="case-study-image">
+                        <img src="../../images/case-media.svg" alt="Кейс Медиа">
+                    </div>
+                    <div class="case-study-content">
+                        <h3 class="case-study-title">Медиа</h3>
+                        <p class="case-study-description">Новостной портал увеличил время на сайте на 40% и количество просмотренных страниц на 25% после оптимизации навигации на основе данных аналитики Windqix.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section faq">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Часто задаваемые вопросы</h2>
+                <p class="section-subtitle">Ответы на популярные вопросы об инструментах Windqix</p>
+            </div>
+            <div class="faq-items">
+                <div class="faq-item fade-in">
+                    <div class="faq-question">Насколько сложно внедрить инструменты Windqix?</div>
+                    <div class="faq-answer">
+                        <p>Внедрение Windqix очень простое и занимает буквально несколько минут. Достаточно добавить один JS-скрипт в код вашего сайта — и система начнет сбор данных. Большинство клиентов начинают получать первые инсайты уже в течение первого дня использования.</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-in">
+                    <div class="faq-question">Какой объем трафика может обрабатывать Windqix?</div>
+                    <div class="faq-answer">
+                        <p>Наша инфраструктура масштабируется автоматически в зависимости от нагрузки. Мы обслуживаем как небольшие сайты с сотнями посетителей, так и крупные порталы с миллионами ежедневных посещений. Независимо от вашего трафика, Windqix обеспечит стабильную работу и точные данные.</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-in">
+                    <div class="faq-question">Как данные Windqix интегрируются с другими аналитическими инструментами?</div>
+                    <div class="faq-answer">
+                        <p>Windqix предлагает готовые интеграции с популярными сервисами, включая Google Analytics, Яндекс.Метрику, Amplitude, Mixpanel и другие. Кроме того, у нас есть открытый API, который позволяет создавать собственные интеграции с любыми системами. Вы можете экспортировать данные в различных форматах или настроить автоматическую синхронизацию.</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-in">
+                    <div class="faq-question">Как обеспечивается безопасность собираемых данных?</div>
+                    <div class="faq-answer">
+                        <p>Безопасность — наш приоритет. Все данные шифруются при передаче и хранении, доступ к ним строго контролируется. Мы соответствуем требованиям GDPR и других международных стандартов защиты данных. Наша инфраструктура регулярно проходит аудиты безопасности, а вы можете настроить различные уровни доступа для членов вашей команды.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section cta">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="cta-title">Начните использовать мощные инструменты аналитики</h2>
+                <p class="cta-subtitle">Зарегистрируйтесь бесплатно и получите 14 дней полного доступа ко всем инструментам Windqix</p>
+                <a href="#" class="btn btn-light">Попробовать бесплатно</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <a href="../../index.html" class="footer-logo">Wind<span class="strong">qix</span></a>
+                    <p class="footer-description">Windqix — сервис для анализа поведения пользователей и оптимизации конверсии вашего сайта. Используйте тепловые карты, записи сессий и анализ воронок, чтобы понять своих пользователей и увеличить конверсию.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer-title">Возможности</h4>
+                    <ul class="footer-links">
+                        <li><a href="../features/heatmaps/index.html">Тепловые карты</a></li>
+                        <li><a href="../features/sessions/index.html">Запись сессий</a></li>
+                        <li><a href="../features/funnels/index.html">Анализ воронок</a></li>
+                        <li><a href="../features/forms/index.html">Аналитика форм</a></li>
+                        <li><a href="../features/ab-testing/index.html">A/B тестирование</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Инструменты</h4>
+                    <ul class="footer-links">
+                        <li><a href="analytics/index.html">Аналитика поведения</a></li>
+                        <li><a href="reporting/index.html">Отчеты и дашборды</a></li>
+                        <li><a href="alerts/index.html">Оповещения</a></li>
+                        <li><a href="api/index.html">API доступ</a></li>
+                        <li><a href="integrations/index.html">Интеграции</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Компания</h4>
+                    <ul class="footer-links">
+                        <li><a href="../about/index.html">О нас</a></li>
+                        <li><a href="../team/index.html">Команда</a></li>
+                        <li><a href="#">Блог</a></li>
+                        <li><a href="#">Карьера</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright">© 2023 Windqix. Все права защищены.</div>
+                <div class="footer-bottom-links">
+                    <a href="#">Политика конфиденциальности</a>
+                    <a href="#">Условия использования</a>
+                    <a href="#">Правовая информация</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../js/script.js"></script>
+</body>
+</html> 
